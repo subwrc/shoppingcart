@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:weightSum="1" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="70dip"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:textSize="15dip"
+        android:textStyle="bold"
+        android:textColor="#7f0000"
+        android:paddingLeft="2dip" 
+        android:text="Name" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="100dip"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:textSize="15dip"
+        android:textStyle="bold"
+        android:textColor="#d08021"
+        android:layout_marginLeft="10dip"       
+        android:text="Supermarket" />
+
+    <TextView
+        android:id="@+id/textView3"
+       	android:layout_width="100dip"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:layout_marginLeft="10dip"
+        android:textSize="15dip"
+        android:textStyle="bold"
+        android:textColor="#d08021"
+        android:text="Product" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="50dip"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:layout_marginLeft="10dip"
+        android:textSize="15dip"
+        android:textStyle="bold"
+        android:textColor="#d08021"
+        android:text="Price" />
+
+</LinearLayout>

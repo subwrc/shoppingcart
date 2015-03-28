@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:gravity="left|center"
+    android:layout_width="wrap_content"
+    android:paddingBottom="10px"
+    android:paddingTop="10px"
+    android:paddingLeft="3px">
+     >
+
+    <TextView
+        android:id="@+id/textname"
+        android:layout_width="70dip"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:textSize="15dip"
+        android:textColor="#7f0000"
+        android:paddingLeft="2dip"  />
+
+    <TextView
+        android:id="@+id/textsupermarket"
+        android:layout_width="100dip"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:textSize="15dip"
+        android:textColor="#d08021"
+        android:layout_marginLeft="10dip" />
+
+    <TextView
+        android:id="@+id/textproduct"
+        android:layout_width="100dip"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:layout_marginLeft="10dip"
+        android:textSize="15dip"
+        android:textColor="#d08021"/>
+
+    <TextView
+        android:id="@+id/textprice"
+        android:layout_width="50dip"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:layout_marginLeft="10dip"
+        android:textSize="15dip"
+        android:textColor="#d08021"/>
+
+</LinearLayout>

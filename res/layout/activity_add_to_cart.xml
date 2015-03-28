@@ -1,0 +1,282 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    tools:context=".LinearLayout" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="20px" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10px"
+            android:paddingTop="20px"
+            android:text="Name" />
+
+        <EditText
+            android:id="@+id/name_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40px"
+            android:layout_weight="0.50"
+            android:paddingTop="20px" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="81dp"
+        android:orientation="horizontal"
+        android:paddingTop="20px" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10px"
+            android:paddingTop="20px"
+            android:text="Category" />
+
+        <Spinner
+            android:id="@+id/spinner1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+        <Spinner
+            android:id="@+id/spinner2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/other_category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="New category"
+            android:maxLength="20"
+            android:textSize="12sp"
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/other_product"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="other product"
+            android:maxLength="20"
+            android:textSize="12sp"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="223dp"
+        android:layout_weight="0.62"
+        android:background="#ffffff"
+        android:shrinkColumns="*"
+        android:stretchColumns="*" >
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_span="3"
+                android:background="#b0b0b0"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Supermarkets"
+                android:textColor="#000"
+                android:textSize="14sp" />
+        </TableRow>      
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="1dp" >
+
+            <TextView
+                android:layout_weight="1"
+                android:background="#dcdcdc"
+                android:clickable="true"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Name"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_weight="1"
+                android:background="#d3d3d3"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Location"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_weight="1"
+                android:background="#cac9c9"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Price"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <EditText
+                android:id="@+id/name1"
+                android:layout_weight="1"
+                android:background="#dcdcdc"
+                android:clickable="false"
+                android:gravity="center"
+                android:hint="Name1"
+                android:maxLength="18"
+                android:padding="15dp"
+                android:textColor="#000000"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/location1"
+                android:layout_weight="1"
+                android:background="#d3d3d3"
+                android:gravity="center"
+                android:hint="Location1"
+                android:padding="15dp"
+                android:textColor="#000000"
+                android:textSize="10sp" />
+
+            <EditText
+                android:id="@+id/price1"
+                android:layout_weight="1"
+                android:background="#cac9c9"
+                android:gravity="center"
+                android:hint="Price1"
+                android:inputType="numberDecimal"
+                android:maxLength="6"
+                android:padding="15dp"
+                android:textColor="#000000"
+                android:textSize="10sp" />
+        </TableRow>
+        
+           <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <EditText
+                android:id="@+id/name2"
+                android:layout_weight="1"
+                android:background="#dcdcdc"
+                android:gravity="center"
+                android:hint="Name2"
+                android:maxLength="18"
+                android:padding="15dp"
+                android:textColor="#000000"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/location2"
+                android:layout_weight="1"
+                android:background="#d3d3d3"
+                android:gravity="center"
+                android:hint="Location2"
+                android:padding="15dp"
+                android:textColor="#000000"
+                android:textSize="10sp" />
+
+            <EditText
+                android:id="@+id/price2"
+                android:layout_weight="1"
+                android:background="#cac9c9"
+                android:gravity="center"
+                android:hint="Price2"
+                android:inputType="numberDecimal"
+                android:maxLength="6"
+                android:padding="15dp"
+                android:textColor="#000000"
+                android:textSize="10sp" />
+        </TableRow>
+        
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <EditText
+                android:id="@+id/name3"
+                android:layout_weight="1"
+                android:background="#dcdcdc"
+                android:gravity="center"
+                android:hint="Name3"
+                android:maxLength="18"
+                android:padding="15dp"
+                android:textColor="#000000"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/location3"
+                android:layout_weight="1"
+                android:background="#d3d3d3"
+                android:gravity="center"
+                android:hint="Location3"
+                android:padding="15dp"
+                android:textColor="#000000"
+                android:textSize="10sp" />
+
+            <EditText
+                android:id="@+id/price3"
+                android:layout_weight="1"
+                android:background="#cac9c9"
+                android:gravity="center"
+                android:hint="Price3"
+                android:inputType="numberDecimal"
+                android:maxLength="6"
+                android:padding="15dip"
+                android:textColor="#000000"
+                android:textSize="10sp" />
+        </TableRow>
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal" >
+
+        <Button
+            android:id="@+id/savebutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="savetocart"
+            android:paddingLeft="20px"
+            android:paddingTop="10px"
+            android:text="Save" />
+
+        <Button
+            android:id="@+id/buttonclear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Clear locations" />
+
+    </LinearLayout>
+
+ </LinearLayout>    

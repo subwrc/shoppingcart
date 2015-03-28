@@ -1,0 +1,51 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/textWidth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textname"
+        android:layout_marginLeft="26dp"
+        android:layout_marginTop="32dp"
+        android:text="Width" />
+
+    <TextView
+        android:id="@+id/textOrientation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textHeight"
+        android:layout_below="@+id/textHeight"
+        android:layout_marginTop="40dp"
+        android:text="Orientation" />
+
+    <TextView
+        android:id="@+id/textHeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/textWidth"
+        android:layout_below="@+id/textWidth"
+        android:layout_marginTop="41dp"
+        android:text="Height" />
+
+    <TextView
+        android:id="@+id/textname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_screensize"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:text="Screen Size" />
+
+    <Button
+        android:id="@+id/button_screensize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="Show size" />
+
+</RelativeLayout>
